@@ -38,26 +38,37 @@
             gesture-detector
         >
             <a-assets>
-                <!-- Videos -->
+                <!-- Video1 -->
                 <video
                     id="vid1"
-                    src="assets/montage-dusinage.mp4"
+                    src="assets/specification-geo.mp4"
                     preload="auto"
                     loop
                     crossorigin
                     playsinline
                 ></video>
+                <!-- Video2 -->
                 <video
                     id="vid2"
-                    src="assets/mov_bbb.mp4"
+                    src="assets/etat-de-surface.mp4"
                     preload="auto"
                     loop
                     crossorigin
                     playsinline
                 ></video>
+                <!-- Video3 -->
                 <video
                     id="vid3"
-                    src="assets/asset.mp4"
+                    src="assets/specification-dim.mp4"
+                    preload="auto"
+                    loop
+                    crossorigin
+                    playsinline
+                ></video>
+                <!-- Video4 -->
+                <video
+                    id="vid4"
+                    src="assets/de.mp4"
                     preload="auto"
                     loop
                     crossorigin
@@ -69,7 +80,7 @@
             <a-marker
                 type="pattern"
                 preset="custom"
-                url="assets/montage-dusinage.patt"
+                url="assets/specification-geo.patt"
                 videohandler="videoId: vid1"
                 smooth="true"
                 smoothcount="10"
@@ -94,7 +105,7 @@
             <a-marker
                 type="pattern"
                 preset="custom"
-                url="assets/marker.patt"
+                url="assets/etat-de-surface.patt"
                 videohandler="videoId: vid2"
                 smooth="true"
                 smoothcount="10"
@@ -119,8 +130,33 @@
             <a-marker
                 type="pattern"
                 preset="custom"
-                url="assets/pattern-marker.patt"
+                url="assets/specification-dim.patt"
                 videohandler="videoId: vid3"
+                smooth="true"
+                smoothcount="10"
+                smoothtolerance="0.01"
+                smooththreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="marker3"
+            >
+                <a-video
+                    src="#vid3"
+                    scale="2 1 1"
+                    position="0 0.1 0"
+                    rotation="-90 0 0"
+                    class="clickable"
+                    gesture-handler
+                ></a-video>
+            </a-marker>
+
+            <!-- Marker 4 -->
+            <a-marker
+                type="pattern"
+                preset="custom"
+                url="assets/designation.patt"
+                videohandler="videoId: vid4"
                 smooth="true"
                 smoothcount="10"
                 smoothtolerance="0.01"
