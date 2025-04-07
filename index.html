@@ -74,6 +74,16 @@
                     crossorigin
                     playsinline
                 ></video>
+                <!-- Video5 -->
+                <video
+                    id="vid5"
+                    src="assets/montage-dusinage.mp4"
+                    preload="auto"
+                    loop
+                    crossorigin
+                    playsinline
+                ></video>
+
             </a-assets>
 
             <!-- Marker 1 -->
@@ -176,6 +186,30 @@
                 ></a-video>
             </a-marker>
 
+            <!-- Marker 5 -->
+            <a-marker
+                type="pattern"
+                preset="custom"
+                url="assets/montage-dusinage.patt"
+                videohandler="videoId: vid5"
+                smooth="true"
+                smoothcount="10"
+                smoothtolerance="0.01"
+                smooththreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="marker3"
+            >
+                <a-video
+                    src="#vid54"
+                    scale="2 1 1"
+                    position="0 0 0"
+                    rotation="-90 0 0"
+                    class="clickable"
+                    gesture-handler
+                ></a-video>
+            </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
     </body>
