@@ -45,32 +45,76 @@
       </a-assets>
 
       <!-- Video Marker 1 -->
-      <a-marker type="pattern" preset="custom" url="assets/specification-geo.patt" videohandler="videoId: vid1">
+      <a-marker type="pattern" preset="custom" url="assets/specification-geo.patt" videohandler="videoId: vid1" 
+                smooth="true"
+                smoothcount="10"
+                smoothtolerance="0.01"
+                smooththreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="marker1">
         <a-video src="#vid1" scale="2 1 1" position="0 0 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
       </a-marker>
 
       <!-- Video Marker 2 -->
-      <a-marker type="pattern" preset="custom" url="assets/etat-de-surface.patt" videohandler="videoId: vid2">
+      <a-marker type="pattern" preset="custom" url="assets/etat-de-surface.patt" videohandler="videoId: vid2" 
+                smooth="true"
+                smoothcount="10"
+                smoothtolerance="0.01"
+                smooththreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="marker2">
         <a-video src="#vid2" scale="2 1 1" position="0 0 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
       </a-marker>
 
       <!-- Video Marker 3 -->
-      <a-marker type="pattern" preset="custom" url="assets/specification-dim.patt" videohandler="videoId: vid3">
+      <a-marker type="pattern" preset="custom" url="assets/specification-dim.patt" videohandler="videoId: vid3"
+                smooth="true"
+                smoothcount="10"
+                smoothtolerance="0.01"
+                smooththreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="marker3">
         <a-video src="#vid3" scale="2 1 1" position="0 0 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
       </a-marker>
 
       <!-- Video Marker 4 -->
-      <a-marker type="pattern" preset="custom" url="assets/designation.patt" videohandler="videoId: vid4">
+      <a-marker type="pattern" preset="custom" url="assets/designation.patt" videohandler="videoId: vid4"
+              smooth="true"
+                smoothcount="10"
+                smoothtolerance="0.01"
+                smooththreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="marker4">
         <a-video src="#vid4" scale="2 1 1" position="0 0 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
       </a-marker>
 
       <!-- Video Marker 5 -->
-      <a-marker type="pattern" preset="custom" url="assets/montage-dusinage.patt" videohandler="videoId: vid5">
+      <a-marker type="pattern" preset="custom" url="assets/-dusinage.patt" videohandler="videoId: vid5"
+                smooth="true"
+                smoothcount="10"
+                smoothtolerance="0.01"
+                smooththreshold="5"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="marker5">
         <a-video src="#vid5" scale="2 1 1" position="0 0 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
       </a-marker>
 
       <!-- 3D Model Marker (Hiro) -->
-      <a-marker type="pattern" url="assets/montage-dusinage.patt">
+      <a-marker type="pattern" url="assets/montage-dusinage.patt" 
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5">
         <a-entity
           position="0 0 0"
           scale="0.05 0.05 0.05"
