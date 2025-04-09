@@ -42,6 +42,8 @@
         <video id="vid3" src="assets/specification-dim.mp4" preload="auto" loop crossorigin playsinline></video>
         <video id="vid4" src="assets/designation.mp4" preload="auto" loop crossorigin playsinline></video>
         <video id="vid5" src="assets/montage-dusinage.mp4" preload="auto" loop crossorigin playsinline></video>
+        <a-asset-item id="trex" src="assets/trex.gltf"></a-asset-item>
+
       </a-assets>
 
       <!-- Video Marker 1 -->
@@ -54,7 +56,7 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="marker1">
-        <a-video src="#vid1" scale="2 1 1" position="0 0 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
+        <a-video src="#vid1" scale="2 1 1" position="0 0.1 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
       </a-marker>
 
       <!-- Video Marker 2 -->
@@ -67,7 +69,7 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="marker2">
-        <a-video src="#vid2" scale="2 1 1" position="0 0 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
+        <a-video src="#vid2" scale="2 1 1" position="0 0.1 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
       </a-marker>
 
       <!-- Video Marker 3 -->
@@ -80,7 +82,7 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="marker3">
-        <a-video src="#vid3" scale="2 1 1" position="0 0 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
+        <a-video src="#vid3" scale="2 1 1" position="0 0.1 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
       </a-marker>
 
       <!-- Video Marker 4 -->
@@ -93,7 +95,7 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="marker4">
-        <a-video src="#vid4" scale="2 1 1" position="0 0 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
+        <a-video src="#vid4" scale="2 1 1" position="0 0.1 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
       </a-marker>
 
       <!-- Video Marker 5 -->
@@ -106,7 +108,7 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="marker5">
-        <a-video src="#vid5" scale="2 1 1" position="0 0 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
+        <a-video src="#vid5" scale="2 1 1" position="0 0.1 0" rotation="-90 0 0" class="clickable" gesture-handler></a-video>
       </a-marker>
 
       <!-- 3D Model Marker (Hiro) -->
@@ -116,9 +118,9 @@
       smoothTolerance=".01"
       smoothThreshold="5">
         <a-entity
-          position="0 0 0"
+          position="0 0.1 0"
           scale="2 2 2"
-          gltf-model="assets/trex.gltf"
+          gltf-model="##trex"
         ></a-entity>
       </a-marker>
 
